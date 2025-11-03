@@ -114,7 +114,6 @@ def listar_usuarios():
             print(f"Contato de Emergência: {usuario['telefone_emergencia']}")
 
 
-
 usuarios = carregar_dados()
 
 
