@@ -96,7 +96,7 @@ def cadastrar_usuarios():
             'nome': nome,
             'telefone': telefone,
             'telefone_emergencia': telefone_emergencia,
-            'idade': idade
+            'idade': idade,
       }
 
       usuarios.append(usuario)
@@ -112,6 +112,14 @@ def listar_usuarios():
             print(f"Idade: {usuario['idade']}")
             print(f"Contato: {usuario['telefone']}")
             print(f"Contato de Emergência: {usuario['telefone_emergencia']}")
+
+
+def usuario_existe(cpf):
+      for usuario in usuarios:
+            if usuario["cpf"] == cpf:
+                  return True
+            
+      return False
 
 
 usuarios = carregar_dados()
