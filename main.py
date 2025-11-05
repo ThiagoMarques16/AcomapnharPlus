@@ -37,11 +37,11 @@ def menu_usuarios():
             elif opcao == "4":
                   print("Em breve")
             elif opcao == "0":
-                  print("\n👋 Encerrando o programa...")
+                  print("\nRetornando ao menu principal...")
                   break
             else:
                   print("Opção invalida")
-                  input("\nAperte enter para continuar...")
+            input("\nAperte enter para continuar...")
 
       return
 
@@ -49,22 +49,22 @@ def menu_consultas():
       while True:
             print("\n==== MENU CONSULTAS ====")
             print("1. Cadastrar consulta")
-            print("2. Listar consulta")
+            print("2. Minhas consultas")
             print("3. Editar consulta")
             print("4. Deletar consulta")
-            print("0. Sair")
+            print("0. Retornar ao menu principal")
 
             opcao = int(input("Escolha uma opção: " ))
             if opcao == 1:
                   consultas.cadastrar_consulta()
             elif opcao == 2:
-                  print("Em breve")
+                  consultas.listar_consultas()
             elif opcao == 3:
                   print("Em breve")
             elif opcao == 4:
                   print("Em breve")
             elif opcao == 0:
-                  print("\n👋 Encerrando o programa...")
+                  print("\nRetornando ao menu principal..")
                   break
             else:
                   print("Opção invalida")
