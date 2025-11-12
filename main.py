@@ -33,7 +33,7 @@ def menu_usuarios():
             elif opcao == "2":
                   usuarios.listar_usuarios()
             elif opcao == "3":
-                  print("Em breve")
+                  usuarios.editar_usuario()
             elif opcao == "4":
                   print("Em breve")
             elif opcao == "0":
