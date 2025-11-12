@@ -160,6 +160,21 @@ def editar_usuario():
                         return
             print("❌ CPF não encontrado.")
 
+def deletar_usuario():
+      while True:
+            cpf = input("CPF: ")
+            cpf_validado = validar_cpf(cpf, usuarios)
+            if not cpf_validado:
+                  return
+            
+            for usuario in usuarios:
+                  if usuario['cpf'] == cpf_validado:
+                        usuarios.remove(usuario)
+                        salvar_usuario(usuarios)
+                        print("✅ Usuário removido com sucesso.")
+                        return
+            print("❌ CPF não encontrado.")
+
 
 def usuario_existe(cpf):
       for usuario in usuarios:
