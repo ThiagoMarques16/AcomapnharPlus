@@ -35,7 +35,7 @@ def menu_usuarios():
             elif opcao == "3":
                   usuarios.editar_usuario()
             elif opcao == "4":
-                  print("Em breve")
+                  usuarios.deletar_usuario()
             elif opcao == "0":
                   print("\nRetornando ao menu principal...")
                   break
